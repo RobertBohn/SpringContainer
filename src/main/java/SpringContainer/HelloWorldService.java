@@ -12,6 +12,13 @@ public class HelloWorldService {
     }
 
     public String sayHello() {
+        long z = 0;
+
+        for ( long i=0; i<100000; i++)      {
+            for ( long x=0; x<10000; x++)
+                                    z++;
+        }
+
         return "Hello from HelloWorld Service! " + name;
     }
 
